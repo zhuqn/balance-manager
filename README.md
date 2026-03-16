@@ -51,8 +51,15 @@ balance-manager/
 
 ### 1. 安装依赖
 
+**Python (后端 + CLI)**:
 ```bash
 pip install -r requirements.txt
+```
+
+**Node.js (前端)**:
+```bash
+cd frontend
+npm install
 ```
 
 ### 2. 配置 API Key
@@ -62,7 +69,7 @@ balance-manager init
 # 编辑 ~/.balance_manager/config.yaml 添加 API Key
 ```
 
-### 3. 查询余额
+### 3. 使用 CLI
 
 ```bash
 # 查询所有平台
@@ -74,6 +81,26 @@ balance-manager check --platform openrouter
 # 查看汇总
 balance-manager summary
 ```
+
+### 4. 启动 Web 界面
+
+**启动后端 API + 前端**:
+```bash
+./start.sh
+```
+
+**或分别启动**:
+```bash
+# 终端 1: 启动后端 API
+./start-backend.sh
+
+# 终端 2: 启动前端
+./start-frontend.sh
+```
+
+访问 http://localhost:5173 查看 Web 界面。
+
+**API 文档**: http://localhost:8000/docs
 
 ---
 
