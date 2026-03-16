@@ -1,0 +1,37 @@
+# Balance Manager Configuration Example
+# Copy this file to config.yaml and fill in your API keys
+
+platforms:
+  openrouter:
+    enabled: true
+    api_key: "${OPENROUTER_API_KEY}"
+    check_interval: 3600  # seconds
+    
+  minimax:
+    enabled: true
+    api_key: "${MINIMAX_API_KEY}"
+    
+  volcengine:
+    enabled: true
+    api_key: "${VOLCENGINE_API_KEY}"
+    
+  bfl:
+    enabled: true
+    api_key: "${BFL_API_KEY}"
+
+  # Manual entry platforms
+  aliyun:
+    enabled: true
+    method: manual
+    
+  kling:
+    enabled: true
+    method: manual
+
+thresholds:
+  warning: 100.0    # Warn when balance below this
+  critical: 50.0    # Critical alert below this
+
+storage:
+  type: json
+  path: ~/.balance_manager/data.json
