@@ -48,9 +48,9 @@ dev = [
 balance-manager = "src.cli.main:cli"
 
 [project.urls]
-Homepage = "https://github.com/openclaw/balance-manager"
-Repository = "https://github.com/openclaw/balance-manager.git"
-Issues = "https://github.com/openclaw/balance-manager/issues"
+Homepage = "https://github.com/zhuqn/balance-manager"
+Repository = "https://github.com/zhuqn/balance-manager.git"
+Issues = "https://github.com/zhuqn/balance-manager/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

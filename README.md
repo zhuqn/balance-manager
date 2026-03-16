@@ -142,8 +142,8 @@ Results: 12 passed, 0 failed out of 12 tests
 
 ## 📞 联系方式
 
-- **项目主页**: https://github.com/openclaw/balance-manager
-- **Issues**: https://github.com/openclaw/balance-manager/issues
+- **项目主页**: https://github.com/zhuqn/balance-manager
+- **Issues**: https://github.com/zhuqn/balance-manager/issues
 
 ---
 
